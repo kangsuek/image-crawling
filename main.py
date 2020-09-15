@@ -32,14 +32,12 @@ def crawling_start(
     log = logging.getLogger("snowdeer_log")
     if log_level == "INFO":
         log.setLevel(logging.INFO)
+        formatter = logging.Formatter("%(message)s")
     else:
         log.setLevel(logging.DEBUG)
-
-    # formatter = logging.Formatter(
-    #     "[%(levelname)s] (%(filename)s:%(lineno)d) > %(message)s"
-    # )
-
-    formatter = logging.Formatter("%(message)s")
+        formatter = logging.Formatter(
+            "[%(levelname)s] (%(filename)s:%(lineno)d) > %(message)s"
+        )
 
     log_max_size = 10 * 1024 * 1024  # 최대 10MB
     log_file_count = 20  # 총 20개 파일까지 생성
