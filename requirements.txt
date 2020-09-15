@@ -1,0 +1,5 @@
+beautifulsoup4 # HTML or XML parser
+selenium # automate web browser interaction from Python
+requests # HTTP/1.1 requests
+argparse # command line argparser
+configparser # config parser
