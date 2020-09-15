@@ -151,7 +151,7 @@ def crawling_start(
     # 종료 시각
     now = datetime.datetime.now()
     nowDatetime = now.strftime("%Y-%m-%d %H:%M:%S")
-    log.info(f"[{nowDatetime}] 크롤링 종료... [실행시간 : {times}]")  # 종료 시간 출력
+    log.info(f"[{nowDatetime}] 크롤링 종료... (실행시간 : {times})")  # 종료 시간 출력
 
 
 def cli():
