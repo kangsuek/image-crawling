@@ -9,6 +9,8 @@ config.ini 파일에 아래 설정을 환경에 맞게 수정합니다.
 
 실행방법
 
+    ./chromedriver 실행 후
+
     Running the script:
     python3 main.py -u <search_url> -c <category> -s <start_page_number> -e <end_page_number> -n <file_number>
 
