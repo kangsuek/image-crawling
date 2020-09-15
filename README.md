@@ -9,6 +9,10 @@ config.ini 파일에 아래 설정을 환경에 맞게 수정합니다.
 
 실행방법
 
+    python3 -m venv .venv 실행 (가상환경 설정)
+    source .venv/bin/activate 실행 (가상환경 실행)
+    python3 -m pip install --upgrade pip 실행 (pip 업그레이드)
+    pip install -r requirements.txt 실행 (필요 package 다운로드)
     ./chromedriver 실행 후
 
     Running the script:
@@ -22,4 +26,6 @@ config.ini 파일에 아래 설정을 환경에 맞게 수정합니다.
     -n <file_number> - 저장파일명 시작번호(선택). 기본값은 1
 
     기본 이미지 저장 위치는 down_images/category 디렉토리에 1.jpg와 같이 저장됩니다.
+
+    예) python3 main.py -u https://www.g9.co.kr/Display/Category/400000076/0/0 -c clothes -s 1 -e 10
 
