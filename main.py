@@ -155,6 +155,7 @@ def crawling_start(
 def cli():
 
     """CLI"""
+    DESCRIPTION = "G9 사이트의 제품 이미지를 크롤링하여 저장합니다."
     ARGS_HELP = """
     G9 사이트의 제품 이미지 Crawling Tool
     G9 사이트의 제품 이미지를 크롤링하여 저장합니다.
@@ -171,7 +172,7 @@ def cli():
 
     기본 이미지 저장 위치는 down_images/category 디렉토리에 1.jpg와 같이 저장됩니다.
     """
-    parser = argparse.ArgumentParser(usage=ARGS_HELP)
+    parser = argparse.ArgumentParser(description=DESCRIPTION, usage=ARGS_HELP)
     parser.add_argument(
         "-u",
         required=True,
